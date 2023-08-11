@@ -85,3 +85,33 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
+@font-face {
+  font-family: 'Akziden';
+  src: url(../fonts/AkzidenzGroteskPro-Regular.eot);
+  src: url(../fonts/AkzidenzGroteskPro-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/AkzidenzGroteskPro-Regular.otf) format("otf"), url(../fonts/AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular) format("svg"), url(../fonts/AkzidenzGroteskPro-Regular.ttf) format("truetype"), url(../fonts/AkzidenzGroteskPro-Regular.woff) format("woff"), url(../fonts/AkzidenzGroteskPro-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url(../fonts/bebas_neue_regular.eot);
+  src: url(../fonts/bebas_neue_regular.eot?#iefix) format("embedded-opentype"), url(../fonts/bebas_neue_regular.otf) format("otf"), url(../fonts/bebas_neue_regular.svg#bebas_neue_regular) format("svg"), url(../fonts/bebas_neue_regular.ttf) format("truetype"), url(../fonts/bebas_neue_regular.woff) format("woff"), url(../fonts/bebas_neue_regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url(../fonts/PTSans-Regular.eot);
+  src: url(../fonts/PTSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/PTSans-Regular.otf) format("otf"), url(../fonts/PTSans-Regular.svg#PTSans-Regular) format("svg"), url(../fonts/PTSans-Regular.ttf) format("truetype"), url(../fonts/PTSans-Regular.woff) format("woff"), url(../fonts/PTSans-Regular.woff2) format("woff2");
+}
+
+.text {
+  font-family: 'PTSans';
+}
+
+.textN {
+  font-family: 'Akziden';
+}
+
+.textB {
+  font-family: 'bebas';
+}
