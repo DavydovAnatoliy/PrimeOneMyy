@@ -104,21 +104,9 @@ h6 {
   src: url(../fonts/PTSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/PTSans-Regular.otf) format("otf"), url(../fonts/PTSans-Regular.svg#PTSans-Regular) format("svg"), url(../fonts/PTSans-Regular.ttf) format("truetype"), url(../fonts/PTSans-Regular.woff) format("woff"), url(../fonts/PTSans-Regular.woff2) format("woff2");
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.container {
-  max-width: 880px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 15px;
-}
-
 .header {
   position: fixed;
+  z-index: 50;
   width: 100%;
 }
 
@@ -401,4 +389,116 @@ h6 {
 
 body.lock {
   overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.content {
+  padding: 180px 0 0 0;
+}
+
+.private {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+}
+
+.private__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.private__image {
+  height: 100%;
+}
+
+.private-body {
+  padding: 75px 0 75px 60px;
+}
+
+.private-body__title {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'bebas';
+  letter-spacing: 5px;
+  margin: 0 0 30px 0;
+}
+
+.private-body__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin: 0 0 50px 0;
+}
+
+.private-body-content {
+  max-width: 305px;
+}
+
+.private-body-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.private-body-buttons__link {
+  font-family: 'bebas';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: underline;
+  margin: 0 0 0 15px;
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 33px;
+  font-size: 15px;
+  font-family: 'bebas';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn_w {
+  background-color: #fff;
+  color: #000;
 }

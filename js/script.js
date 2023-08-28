@@ -16,3 +16,16 @@ headerTopBurger.addEventListener('click', function () {
     document.body.classList.toggle("lock");
     
 })
+
+function ibg(){
+
+let ibg=document.querySelectorAll(".ibg");
+    for (let elem of ibg) {
+        let img = elem.querySelector('img');
+if(img){
+elem.style.backgroundImage = 'url('+img.getAttribute('src')+')';
+}
+}
+}
+
+ibg();
