@@ -330,6 +330,161 @@ margin: 0 0 40px 0;
 }
 }
 
+.why {}
+
+.why-top {
+display: flex;
+background-color: #000;
+    &__column {
+        flex: 0 0 50%;
+    }
+
+    &__text {
+        text-align: right;
+        color: #fff;
+         font-family: 'bebas';
+         font-size: 50px;
+         text-transform: uppercase;
+         letter-spacing: 5px;
+         padding: 50px 60px 50px 0;
+    }
+
+    &__image {
+        height: 100%;
+    }
+}
 
 
+.why-body {
+background-color: #ebebeb;
+padding: 50px 0 0 0;
+    &__column {
+        flex: 0 0 50%;
+        margin: 0 0 50px 0;
+    }
+}
 
+.container {}
+
+.why-body-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why-body-item {
+display: flex;
+    &__icon {
+        flex: 0 0 100px;
+        background: #000;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.why-body-item-body {
+flex: 1 1 100%;
+padding: 0 10px 0 11px;
+display: flex;
+flex-direction: column;
+    &__title {
+        flex: 1 1 auto;
+        font-size: 25px;
+         font-family: 'bebas';
+         letter-spacing: 2.5px;
+         font-weight: 900;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+         font-family: 'Akziden';
+       
+    }
+}
+@media (max-width:870px){
+    .why-top {
+        &__text {
+            font-size: 40px;
+            padding: 40px 10px 40px 0;
+        }
+    }
+}
+@media (max-width:670px) {
+    .why-top {
+        &__text {
+            font-size: 30px;
+            padding: 30px 10px 30px 0;
+        }
+    }
+}
+
+@media (max-width:630px) {
+       .why-top {
+           &__text {
+               font-size: 20px;
+               padding: 20px 5px 20px 0;
+           }
+       }
+.why-body {
+
+    padding: 30px 0 0 0;
+
+    &__column {
+        flex: 1 1 100%;
+        margin: 0 0 30px 0;
+    }
+}
+
+}
+@media (max-width:380px) {
+    .why-top {
+        &__text {
+            font-size: 14px;
+            padding: 10px 3px 10px 0;
+        }
+        &__column {
+            flex: 0 0 100%;
+        }
+    }
+
+
+        
+
+    .why-body {
+        padding: 20px 0 0 0;
+
+        &__column {
+            margin: 0 0 20px 0;
+        }
+    }
+    .why-body-item {
+        display: flex;
+        &__icon {
+            flex: 0 0 80px;
+            background: #000;
+            height: 80px;
+        }
+    }
+.why-body-item-body {
+    flex: 1 1 100%;
+    padding: 0 10px 0 11px;
+
+    &__title {
+        flex: 1 1 auto;
+        font-size: 15px;
+        font-family: 'bebas';
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'Akziden';
+    }
+}
+
+
+}
