@@ -860,3 +860,245 @@ body.lock {
     font-family: 'Akziden';
   }
 }
+
+.contacts {
+  padding: 80px 0 0 0;
+}
+
+.contacts__title {
+  font-family: 'bebas';
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  margin: 0 0 30px 0;
+}
+
+.contacts-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-body__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin: 0 0 20px 0;
+}
+
+.contacts-body__item {
+  font-size: 15px;
+  color: #000;
+  display: inline-block;
+  padding: 0 0 0 35px;
+  line-height: 27px;
+}
+
+.contacts-body__item-1 {
+  background: url(../img/contacts/01.svg) left no-repeat;
+}
+
+.contacts-body__item-2 {
+  background: url(../img/contacts/02.svg) left no-repeat;
+}
+
+.contacts-body__item-3 {
+  background: url(../img/contacts/03.svg) left no-repeat;
+}
+
+.contacts-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts-social__item {
+  display: block;
+  width: 18px;
+  margin: 0 30px 0 0;
+}
+
+.contacts-social__item img {
+  max-width: 100%;
+}
+
+.contacts-social__item:last-child {
+  margin: 0;
+}
+
+.contacts-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+}
+
+.contacts-content__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.contacts-content__map {
+  max-width: 100%;
+  height: 100%;
+}
+
+.contacts-content-form {
+  padding: 55px 60px;
+}
+
+.contacts-content-form__title {
+  font-family: 'bebas';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 0 0 30px 0;
+}
+
+.contacts-content-form-body {
+  max-width: 375px;
+}
+
+.contacts-content-form-line {
+  margin: 0 0 25px 0;
+}
+
+.input {
+  border: 2px solid #959595;
+  background-color: #252525;
+  padding: 0 18px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: #959595;
+  font-size: 15px;
+}
+
+textarea.input {
+  resize: none;
+  height: 100px;
+  padding: 10px 18px;
+}
+
+@media (max-width: 640px) {
+  .contacts-content {
+    display: block;
+  }
+  .contacts-content__column:first-child {
+    height: 300px;
+  }
+  .contacts-content-form {
+    padding: 30px;
+  }
+  .contacts {
+    padding: 25px 0 0 0;
+  }
+  .contacts__title {
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+  }
+  .contacts-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 0 0 25px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts-content__column:first-child {
+    height: 200px;
+  }
+  .contacts-content-form {
+    padding: 20px;
+  }
+  .contacts {
+    padding: 25px 0 0 0;
+  }
+  .contacts__title {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+  }
+  .contacts-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 0 0 25px 0;
+  }
+  .contacts-body__item {
+    font-size: 12px;
+  }
+}
+
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text {
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer__text a {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+
+.footer__text a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .footer-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 125px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-body__column:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer__logo {
+    display: block;
+    width: 160px;
+  }
+  .footer__logo img {
+    max-width: 100%;
+  }
+  .footer__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-body {
+    height: 95px;
+  }
+}
