@@ -39,7 +39,6 @@ headerTopBurger.addEventListener('click', function () {
 })
 
 function ibg(){
-
 let ibg=document.querySelectorAll(".ibg");
     for (let elem of ibg) {
         let img = elem.querySelector('img');
